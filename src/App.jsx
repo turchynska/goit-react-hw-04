@@ -1,12 +1,12 @@
-import './App.css';
-import { useState, useEffect } from 'react'
-import { SearchBar } from './components/SearchBar/SearchBar'
-import Loader from './components/Loader/Loader'
-import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn'
+import './App.css'
+import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
+import {SearchBar} from './components/SearchBar/SearchBar';
 import ErrorMessage from './components/ErrorMessage/ErrorMessage';
-import ImageGallery from "./components/ImageGallery/ImageGallery";
-import {getData} from "./dataPhotos/getData"
-import ImageModal from "./components/ImageModal/ImageModal"
+import ImageGallery from './components/ImageGallery/ImageGallery';
+import { useEffect, useState } from 'react';
+import { getData } from './dataPhotos/getData';
+import  Loader  from './components/Loader/Loader';
+import ImageModal from './components/ImageModal/ImageModal';
 
 
 function App() {

@@ -1,16 +1,15 @@
- import css from "./ImageCard.module.css"
- 
- 
- 
- const ImageCard = ({image, onOpen}) => {
-    return(
-<div  className={css.container} onClick={onOpen}>
-  <img 
-  className={css.image}
-  src={image.urls.small} 
-  alt={image.description}
-   />
-</div>
-    )
- }
- export default ImageCard
+import style from './ImageCard.module.css';
+
+const ImageCard = ({ image, onOpen }) => {
+  return (
+    <div className={style.card} onClick={onOpen}>
+      <img 
+        className={style.img}
+        src={image.urls.small} 
+        alt={image.description}
+      />
+    </div>
+  );
+}
+
+export default ImageCard
